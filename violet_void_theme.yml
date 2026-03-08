@@ -1,0 +1,180 @@
+---
+# ╔══════════════════════════════════════════════════════════════════╗
+# ║ ░█░█░▀█▀░█▀█░█░░░█▀▀░▀█▀░░░█░█░█▀█░▀█▀░█▀▄░░░▀█▀░█░█░█▀▀░█▄█░█▀▀ ║
+# ║ ░▀▄▀░░█░░█░█░█░░░█▀▀░░█░░░░▀▄▀░█░█░░█░░█░█░░░░█░░█▀█░█▀▀░█░█░█▀▀ ║
+# ║ ░░▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀░░▀░░░░░▀░░▀▀▀░▀▀▀░▀▀░░░░░▀░░▀░▀░▀▀▀░▀░▀░▀▀▀ ║
+# ╚══════════════════════════════════════════════════════════════════╝
+# Custom EXA theme matching Kitty cyberpunk colors
+# Colors mapped to hex values from your Kitty theme
+colourful: true
+filekinds:
+  normal: {foreground: "#f4feff", is_dimmed: true} # Foreground color
+  directory: {foreground: "#00fff9", is_bold: true} # Bright cyan
+  symlink: {foreground: "#ff1a67", is_bold: true} # Pink/magenta
+  pipe: {foreground: "#fd7cff", is_bold: true} # Bright purple
+  block_device: {foreground: "#c7b8ff", is_bold: true} # Light purple
+  char_device: {foreground: "#c7b8ff"} # Light purple
+  socket: {foreground: "#ff4294", is_bold: true} # Bright pink
+  special: {foreground: "#fd7cff"} # Bright purple
+  executable: {foreground: "#4bfe9b", is_bold: true} # Bright green
+  mount_point: {foreground: "#ff1a67", is_bold: true, is_underlined: true}
+perms:
+  user_read: {foreground: "#02b17c"} # Green
+  user_write: {foreground: "#fd7cff"} # Bright purple
+  user_execute_file: {foreground: "#ff1a67", is_bold: true} # Pink
+  user_execute_other: {foreground: "#ff1a67", is_bold: true}
+  group_read: {foreground: "#4bfe9b", is_bold: true} # Bright green
+  group_write: {foreground: "#fd7cff", is_bold: true} # Bright purple
+  group_execute: {foreground: "#ff004b", is_bold: true} # Red
+  other_read: {foreground: "#7c60d1", is_bold: true} # Purple
+  other_write: {foreground: "#7c60d1", is_bold: true} # Purple
+  other_execute: {foreground: "#7c60d1", is_bold: true} # Purple
+  special_user_file: {foreground: "#ff004b", is_bold: true} # Red
+  special_other: {foreground: "#ff004b", is_bold: true} # Red
+  attribute: {foreground: "#ff004b", is_bold: true} # Red
+size:
+  major: {foreground: "#00fff9", is_bold: true} # Bright cyan
+  minor: {foreground: "#00a8a4", is_dimmed: true} # Cyan
+  number_byte: {foreground: "#00a8a4", is_dimmed: true} # Cyan
+  number_mega: {foreground: "#00a8a4"} # Cyan
+  number_giga: {foreground: "#00fff9", is_underlined: true} # Bright cyan
+  number_huge: {foreground: "#00fff9", is_underlined: true} # Bright cyan
+  unit_byte: {foreground: "#00a8a4", is_dimmed: true} # Cyan
+  unit_mega: {foreground: "#00a8a4"} # Cyan
+  unit_giga: {foreground: "#00fff9", is_bold: true} # Bright cyan
+  unit_huge: {foreground: "#00fff9", is_bold: true} # Bright cyan
+users:
+  user_you: {foreground: "#fd7cff", is_bold: true} # Bright purple
+  user_root: {foreground: "#ff004b"} # Red
+  user_other: {foreground: "#7c60d1"} # Purple
+  group_yours: {foreground: "#fd7cff", is_bold: true} # Bright purple
+  group_other: {foreground: "#7c60d1"} # Purple
+  group_root: {foreground: "#ff004b"} # Red
+links:
+  normal: {foreground: "#ff1a67", is_bold: true} # Pink
+  multi_link_file: {foreground: "#ff004b", background: "#fd7cff"}
+git:
+  new: {foreground: "#02b17c"} # Green
+  modified: {foreground: "#4bfe9b"} # Bright green
+  deleted: {foreground: "#ff004b", is_bold: true} # Red
+  renamed: {foreground: "#fd7cff"} # Bright purple
+  typechange: {foreground: "#7c60d1"} # Purple
+  ignored: {foreground: "#252525", is_dimmed: true} # Dark gray
+  conflicted: {foreground: "#ff004b", is_bold: true, is_underlined: true}
+git_repo:
+  branch_main: {foreground: "#ff1a67", is_bold: true} # Pink
+  branch_other: {foreground: "#ff004b", is_dimmed: true} # Red dimmed
+  git_clean: {foreground: "#02b17c"} # Green
+  git_dirty: {foreground: "#fd7cff"} # Bright purple
+file_type:
+  image: {foreground: "#7c60d1"} # Purple
+  video: {foreground: "#29adff", is_bold: true} # Blue
+  music: {foreground: "#00fff9"} # Bright cyan
+  lossless: {foreground: "#00fff9", is_bold: true} # Bright cyan
+  crypto: {foreground: "#4bfe9b", is_bold: true} # Bright green
+  document: {foreground: "#c7b8ff"} # Light purple
+  compressed: {foreground: "#02b17c"} # Green
+  temp: {foreground: "#363636"} # Gray
+  compiled: {foreground: "#252525"} # Dark gray
+  build: {foreground: "#fd7cff", is_bold: true, is_underlined: true}
+  source: {foreground: "#7c60d1", is_bold: true} # Purple
+punctuation: {foreground: "#363636", is_bold: true} # Gray
+date: {foreground: "#252525", is_dimmed: true, is_italic: false} # Dark gray
+inode: {foreground: "#252525", is_dimmed: true} # Dark gray
+blocks: {foreground: "#00a8a4", is_dimmed: true} # Cyan
+header: {foreground: "#252525", is_underlined: true, is_dimmed: true, is_bold: true}
+octal: {foreground: "#ff004b", is_dimmed: true, is_italic: false}
+flags: {foreground: "#ff004b", is_dimmed: true, is_underlined: true}
+symlink_path: {foreground: "#252525", is_bold: true, is_italic: false} # DARK GRAY - This is the key fix!
+control_char: {foreground: "#7c60d1", is_dimmed: true, is_italic: false, is_underlined: true}
+broken_symlink: {foreground: "#ff004b", is_underlined: true, is_bold: true, is_italic: false}
+broken_path_overlay: {foreground: "#f4feff", background: "#ff004b", is_underlined: true, is_italic: false}
+filenames:
+  ansible.cfg: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F109A"}}
+  archbtw.txt: {filename: {foreground: "#252525"}}
+  .bash_help: {filename: {foreground: "#252525"}, icon: {glyph: 📜}}
+  .bash_history: {filename: {foreground: "#252525"}, icon: {glyph: 📜}}
+  .bash_logout: {filename: {foreground: "#252525"}, icon: {glyph: 📜}}
+  .bash_profile: {filename: {foreground: "#252525"}, icon: {glyph: 📜}}
+  .bashrc: {filename: {foreground: "#252525"}, icon: {glyph: 📜}}
+  Cargo.toml: {icon: {glyph: 🦀}}
+  .curlrc: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F0863"}}
+  .dircolors: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F0D31"}}
+  .dotfiles: {filename: {foreground: "#29adff"}, icon: {glyph: "📁"}}
+  dotfiles: {filename: {foreground: "#29adff"}, icon: {glyph: "📁"}}
+  dotfiles.key: {filename: {foreground: "#a80065"}, icon: {glyph: "\U000F030B"}}
+  dotfiles.log: {filename: {foreground: "#252525"}, icon: {glyph: "📄"}}
+  .editorconfig: {filename: {foreground: "#252525"}}
+  electron-flags.conf: {filename: {foreground: "#252525"}}
+  .env: {filename: {foreground: "#a80065"}, icon: {glyph: "\U000F030B"}}
+  gamemode.ini: {filename: {foreground: "#252525"}}
+  .gist: {filename: {foreground: "#252525"}, icon: {glyph: 📝}}
+  gitalias.txt: {filename: {foreground: "#252525"}, icon: {glyph: 📝}}
+  .gitconfig: {filename: {foreground: "#252525"}}
+  .gitignore: {filename: {foreground: "#252525"}, icon: {glyph: 📝}}
+  .gitkeep: {filename: {foreground: "#252525"}, icon: {glyph: 📝}}
+  .gitmodules: {filename: {foreground: "#252525"}}
+  .gnupg: {filename: {foreground: "#29adff"}, icon: {glyph: "🔒"}}
+  .gtkrc-2.0: {filename: {foreground: "#252525"}}
+  .gtkrc-2.0.mine: {filename: {foreground: "#252525"}}
+  hadolint.yaml: {filename: {foreground: "#252525"}}
+  .hadolint.yaml: {filename: {foreground: "#252525"}, icon: {glyph: 📋}}
+  .histfile: {filename: {foreground: "#252525"}, icon: {glyph: 📜}}
+  .inputrc: {filename: {foreground: "#252525"}}
+  .lessfilter: {filename: {foreground: "#252525"}, icon: {glyph: "🔍"}}
+  .local: {filename: {foreground: "#29adff"}, icon: {glyph: "\U000F071C"}}
+  .markdownlint-cli2.yaml: {filename: {foreground: "#252525"}}
+  .markdownlint.yaml: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F0354"}}
+  mimeapps.list: {filename: {foreground: "#252525"}}
+  .msmtprc: {filename: {foreground: "#252525"}}
+  .node_repl_history: {filename: {foreground: "#252525"}, icon: {glyph: 📝}}
+  .nvidia-settings-rc: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F08AE"}}
+  .obsidian.vimrc: {filename: {foreground: "#252525"}, icon: {glyph: 📝}}
+  .packettracer: {filename: {foreground: "#252525"}, icon: {glyph: "🌐"}}
+  pavucontrol.ini: {filename: {foreground: "#252525"}}
+  .pre-commit-config.yaml: {filename: {foreground: "#252525"}, icon: {glyph: 🔧}}
+  .pre-commit-hooks.yaml: {filename: {foreground: "#252525"}, icon: {glyph: 🔧}}
+  .prettierignore: {filename: {foreground: "#252525"}, icon: {glyph: 💄}}
+  .prettierrc.yaml: {filename: {foreground: "#252525"}, icon: {glyph: 💄}}
+  .profile: {filename: {foreground: "#252525"}, icon: {glyph: 📜}}
+  .pulse-cookie: {filename: {foreground: "#252525"}, icon: {glyph: 🍪}}
+  pyproject.toml: {filename: {foreground: "#252525"}}
+  .python_history: {filename: {foreground: "#252525"}, icon: {glyph: 🐍}}
+  QtProject.conf: {filename: {foreground: "#252525"}}
+  .rnd: {icon: {glyph: 🖱}}
+  .shellcheckrc: {filename: {foreground: "#252525"}, icon: {glyph: 🐚}}
+  .ssh: {filename: {foreground: "#29adff"}, icon: {glyph: "\U000F08C0"}}
+  starship.toml: {filename: {foreground: "#252525"}}
+  .steampath: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F04D3"}}
+  .steampid: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F04D3"}}
+  .stow-local-ignore: {filename: {foreground: "#252525"}, icon: {glyph: 📦}}
+  .stowrc: {filename: {foreground: "#252525"}, icon: {glyph: 📦}}
+  .taplo.toml: {filename: {foreground: "#252525"}}
+  .taskrc: {filename: {foreground: "#252525"}, icon: {glyph: ✅}}
+  .task.theme: {filename: {foreground: "#252525", is_dimmed: true}, icon: {glyph: ✅}}
+  .textlintrc: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F0354"}}
+  thorium-flags.conf: {filename: {foreground: "#252525"}}
+  .tmux.conf: {filename: {foreground: "#252525"}, icon: {glyph: 🖥️}}
+  tmux.conf: {filename: {foreground: "#252525"}, icon: {glyph: 🖥️}}
+  .typos.toml: {filename: {foreground: "#252525"}, icon: {glyph: ✏️}}
+  user-dirs.dirs: {filename: {foreground: "#252525"}}
+  user-dirs.locale: {filename: {foreground: "#252525"}}
+  .viminfo: {filename: {foreground: "#252525"}, icon: {glyph: 📝}}
+  .vimrc: {filename: {foreground: "#252525"}, icon: {glyph: 📝}}
+  .wakatime.cfg: {filename: {foreground: "#252525"}}
+  .wget-hsts: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F02DA"}}
+  .wgetrc: {filename: {foreground: "#252525"}, icon: {glyph: 📥}}
+  .wine: {filename: "", icon: {glyph: "🍷"}}
+  .Xauthority: {filename: {foreground: "#252525"}, icon: {glyph: 🖥️}}
+  .xinitrc: {filename: {foreground: "#252525"}, icon: {glyph: 🖥️}}
+  .Xresources: {filename: {foreground: "#252525"}, icon: {glyph: 🖥️}}
+  .xsettingsd: {filename: {foreground: "#252525"}, icon: {glyph: 🖥️}}
+  .yamllint.yaml: {filename: {foreground: "#252525"}}
+  .yarnrc: {filename: {foreground: "#252525"}}
+  .zcompdump.dat: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F0B07"}}
+  .zcompdump: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F0B07"}}
+  .zcompdump.zwc: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F0B07"}}
+  .zhistory: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F0B07"}}
+  .zimrc: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F0B07"}}
+  .zshrc: {filename: {foreground: "#252525"}, icon: {glyph: "\U000F0B07"}}
+extensions:
