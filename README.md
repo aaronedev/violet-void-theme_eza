@@ -17,3 +17,7 @@ ln -s ~/path/to/violet-void-theme_eza/violet_void_theme.yml ~/.config/eza/theme.
 ## License
 
 MIT
+
+---
+
+Part of the [Violet Void Theme Monorepo](https://github.com/aaronedev/violet-void-monorepo).
